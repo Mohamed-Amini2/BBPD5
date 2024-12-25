@@ -102,8 +102,14 @@ Built-in sin(1.5708) = 1.0
 - **Power Calculation**: Computes the power of a number iteratively without using external libraries.
 - **Maclaurin Series Functions**: 
   - `sin_maclaurin`
+  - ![image](https://github.com/user-attachments/assets/dc6e2d3a-e99a-48fe-8673-2ecad1d29495)
+
   - `sh_maclaurin`
+  - ![image](https://github.com/user-attachments/assets/d12d45fd-5385-46e4-847f-18e5e249256f)
+
   - `arctg_maclaurin`
+  - ![image](https://github.com/user-attachments/assets/7b47bb56-7541-43ad-9ce4-9e8450e7201f)
+
 
 Each function is implemented with detailed error handling and validations.
 
