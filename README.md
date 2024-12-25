@@ -1,4 +1,4 @@
-# MAAAAAAAAAAAAAAAAAAAAAAAAAAACLAURING SERIES CALCULATOR 
+# MAACLAURING SERIES CALCULATOR 
 
 ### Description 
 WE need To do a python Programme to iteralllly calculate MACLAUUURING SERIE :)))))
@@ -11,13 +11,14 @@ and Alsoo A surprise for now)
 ### todo 
 -[x] implement sin(x)
 -[x] implement sh(x)
-AND THE NEXT function WILL BE HIDDEN FOR NOW NO SPOILLERS!!!!!!!!!!!!!!!!!!!!
+AND THE NEXT function WILL BE HIDDEN FOR NOW NO SPOILLERS!
 
 ### Menu exemple :
 
 Maclaurin Series Calculator
 1. sin(x)
 2. sh(x)
+3. tan(x)
 3. Exit
 Choose function (1-3): 
 
@@ -50,7 +51,7 @@ GitHub.com, GitLab.com, gitea.com и другие аналоги по выбор
 11. Предоставить отчет, программу и скрипты на проверку, ответить на
 вопросы и выполнить дополнительные задания по усмотрению преподавателя.
 
-sounds ALot but (get load of this guy) THIS IS SIMPLE I REQUIRE MORE !!!!
+sounds ALot but (get load of this guy) THIS IS SIMPLE I REQUIRE MORE !
 
-
+gonna add something here soon
 

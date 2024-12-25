@@ -30,13 +30,6 @@ def sh_maclaurin(x: float, iterations: int = 10) -> float:
     Detailed description:
         Uses the formula: sh(x) = sum(x^(2n+1)/(2n+1)!)
         where n goes from 0 to infinity. We approximate using finite iterations.
-
-    Args:
-        x (float): Input value
-        iterations (int): Number of iterations for approximation
-
-    Returns:
-        float: Approximated value of sh(x)
     """
     if iterations < 1:
         raise ValueError("Iterations must be positive")
@@ -46,30 +39,6 @@ def sh_maclaurin(x: float, iterations: int = 10) -> float:
         result += x ** (2 * n + 1) / math.factorial(2 * n + 1)
     return result
 
-def arctg_maclaurin(x: float, iterations: int = 10) -> float:
-    """
-    Calculate arctangent of x using Maclaurin series.
-
-    Detailed description:
-        Uses the formula: arctg(x) = sum((-1)^n * x^(2n+1)/(2n+1))
-        where n goes from 0 to infinity. We approximate using finite iterations.
-
-    Args:
-        x (float): Input value (-1 ≤ x ≤ 1)
-        iterations (int): Number of iterations for approximation
-
-    Returns:
-        float: Approximated value of arctg(x)
-    """
-    if not -1 <= x <= 1:
-        raise ValueError("x must be in range [-1, 1]")
-    if iterations < 1:
-        raise ValueError("Iterations must be positive")
-    
-    result = 0
-    for n in range(iterations):
-        result += (-1) ** n * x ** (2 * n + 1) / (2 * n + 1)
-    return result
 
 def main():
     ITERATIONS = 10  
