@@ -5,7 +5,7 @@ WE need To do a python Programme to iteralllly calculate MACLAUUURING SERIE :)))
 
 ### Features
 sin(x) Calculation
-HHHHHHHHHHHHHYPERbolic sine calculation AKA sh(x)
+HYPERbolic sine calculation AKA sh(x)
 and Alsoo A surprise for now)
 
 ### todo 
