@@ -1,26 +1,8 @@
 # MAACLAURING SERIES CALCULATOR 
 
-### Description 
-WE need To do a python Programme to iteralllly calculate MACLAUUURING SERIE :)))))
+## Description
 
-### Features
-sin(x) Calculation
-HHHHHHHHHHHHHYPERbolic sine calculation AKA sh(x)
-and Alsoo A surprise for now)
-
-### todo 
--[x] implement sin(x)
--[x] implement sh(x)
-AND THE NEXT function WILL BE HIDDEN FOR NOW NO SPOILLERS!
-
-### Menu exemple :
-
-Maclaurin Series Calculator
-1. sin(x)
-2. sh(x)
-3. tan(x)
-3. Exit
-Choose function (1-3): 
+This project implements a **Maclaurin Series Calculator** in Python. The Maclaurin series is a representation of functions as a series expansion around zero. The calculator allows users to compute approximations for various mathematical functions using iterative calculations.
 
 ### TASK )))))))))
 
@@ -53,5 +35,124 @@ GitHub.com, GitLab.com, gitea.com и другие аналоги по выбор
 
 sounds ALot but (get load of this guy) THIS IS SIMPLE I REQUIRE MORE !
 
-gonna add something here soon
+## Features
+
+- **sin(x)**: Calculate the sine of a value using its Maclaurin series expansion.
+- **sh(x)**: Calculate the hyperbolic sine of a value using its Maclaurin series expansion.
+- **arctg(x)**: Calculate the arctangent of a value using its Maclaurin series expansion (only for -1 ≤ x ≤ 1).
+
+## How It Works
+
+The Maclaurin series for the implemented functions is defined as follows:
+
+### Sine Function:
+
+sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n \cdot x^{2n+1}}{(2n+1)!}
+
+### Hyperbolic Sine Function:
+
+sh(x) = \sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)!}
+
+
+### Arctangent Function:
+
+arctg(x) = \sum_{n=0}^{\infty} \frac{(-1)^n \cdot x^{2n+1}}{2n+1}, \quad -1 \leq x \leq 1
+
+
+## Usage
+
+1. Clone this repository to your local machine:
+
+   git clone (https://github.com/Mohamed-Amini2/BBPD5.git)
+   cd BBPD5
+
+
+2. Run the program:
+
+   python Exercice5.py
+
+
+3. Follow the menu to select a function and input a value for `x`. The calculator will display the approximated result and compare it to Python's built-in functions.
+
+### Example Menu:
+```
+Maclaurin Series Calculator
+1. sin(x)
+2. sh(x)
+3. arctg(x)
+4. Exit
+Choose function (1-4):
+```
+
+### Example Output:
+```
+sin(1.5708) ≈ 1.0000035425842861
+Built-in sin(1.5708) = 1.0
+```
+
+## Requirements
+
+- Python 3.6 or higher
+
+## Implementation Details
+
+### Functions Implemented
+
+- **Factorial Calculation**: Computes the factorial of a number iteratively without using external libraries.
+- **Power Calculation**: Computes the power of a number iteratively without using external libraries.
+- **Maclaurin Series Functions**: 
+  - `sin_maclaurin`
+  - `sh_maclaurin`
+  - `arctg_maclaurin`
+
+Each function is implemented with detailed error handling and validations.
+
+### Testing
+
+The program includes a test suite to validate the correctness and robustness of the functions:
+- Approximations of `sin(x)`, `sh(x)`, and `arctg(x)` are tested for accuracy.
+- Error handling tests ensure appropriate exceptions are raised for invalid inputs (e.g., out-of-range values or non-positive iterations).
+
+## Example Code Snippet
+
+Here’s a snippet showing the implementation of `sin_maclaurin`:
+
+```python
+def sin_maclaurin(x: float, iterations: int = 10) -> float:
+    if iterations < 1:
+        raise ValueError("Iterations must be positive")
+
+    result = 0
+    for n in range(iterations):
+        result += ((-1) ** n * power(x, 2 * n + 1)) / factorial(2 * n + 1)
+    return result
+```
+
+## To-Do
+
+- [x] Implement `sin(x)`
+- [x] Implement `sh(x)`
+- [x] Implement `arctg(x)`
+- [ ] Add more functions from the Maclaurin series.
+- [ ] Optimize performance for large inputs.
+
+## Contribution Workflow
+
+1. Fork the repository.
+2. Create a feature branch:
+
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+
+   git commit -m "Add your message here"
+   ```
+4. Push to your branch:
+
+   git push origin feature/your-feature-name
+   
+5. Submit a pull request for review.
+
+
+*Happy Calculating!*
 
