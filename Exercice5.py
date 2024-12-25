@@ -34,7 +34,6 @@ def sh_maclaurin(x: float, iterations: int = 10) -> float:
     Args:
         x (float): Input value
         iterations (int): Number of iterations for approximation
-
     Returns:
         float: Approximated value of sh(x)
     """
@@ -57,7 +56,6 @@ def arctg_maclaurin(x: float, iterations: int = 10) -> float:
     Args:
         x (float): Input value (-1 ≤ x ≤ 1)
         iterations (int): Number of iterations for approximation
-
     Returns:
         float: Approximated value of arctg(x)
     """
